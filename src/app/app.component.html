@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>Facebook Login</h1>
+  <input type="button" name="" value="Login" class="btn" (click)="FbLogin()">
+</div>
+<div *ngIf="userInfo">
+  <img src="{{profileImageUrl}}" alt="" width="50px" height="50px"><br>
+  Gender : {{userDetails.gender}}
+
+</div>
